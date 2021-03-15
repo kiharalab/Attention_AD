@@ -48,7 +48,7 @@ class Attention_LSTM(nn.Module):
 
         x=self.fc2(sum_feature)
         if use_attention:
-            return aa_weight_matrix,x
+            return x,aa_weight_matrix
 
         return x
 
