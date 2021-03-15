@@ -31,7 +31,13 @@ def predict_seq(input_path,model_path,seq_len,num_classes,params):
     input_list=read_input(input_path)
     #verify input
     input_list=verify_input(input_list,seq_len)
-    model=Attention_LSTM(seq_len,num_classes)
+    # get id dict to build connections from
+    aa_id_path = os.path.join(os.getcwd(), "data_processing")
+    aa_id_path = os.path.join(aa_id_path, "aa_id.txt")
+    with open(aa_id_path, 'r') as file:
+        aa_map_Dict = json.load(file)
+
+    model=Attention_LSTM(seq_len+len(aa_map_Dict),num_classes)
 
     #load model state dict
     model = model.cuda()
@@ -45,11 +51,7 @@ def predict_seq(input_path,model_path,seq_len,num_classes,params):
     split_file_name=os.path.split(input_path)[1]
     save_path=init_save_path(split_file_name)
     #create dataset here
-    #get id dict to build connections from
-    aa_id_path=os.path.join(os.getcwd(),"data_processing")
-    aa_id_path=os.path.join(aa_id_path,"aa_id.txt")
-    with open(aa_id_path, 'r') as file:
-        aa_map_Dict=json.load(file)
+
     feature_path=generate_array_input(save_path,aa_map_Dict,input_list,seq_len)
     #specify in the dataset
     testloader=prepare_dataLoader(feature_path,params)
