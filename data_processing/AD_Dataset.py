@@ -31,6 +31,6 @@ class AD_Dataset(data.Dataset):
         return array
 
     def __len__(self):
-        return len(self.sample_index)
+        return len(self.AA_Feature)
 
 
