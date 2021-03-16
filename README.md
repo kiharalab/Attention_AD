@@ -104,6 +104,6 @@ txt file that each line records a sequence with length of 30.
 ```
 python3 main.py --mode=0 -F=example/input_seq.txt -M=best_model/attention_model.pth.tar --gpu=0 --class=2
 ```
-The example input sequence txt is included in [input](https://github.com/kiharalab/Attention_AD/blob/master/example/input_seq.txt), which the 1st line is positive example while 2nd line is the negative example.Our detailed results are saved in [Output](https://github.com/kiharalab/Attention_AD/tree/master/predict_result/input_seq.txt).
+The example input sequence txt is included in [input](https://github.com/kiharalab/Attention_AD/blob/master/example/input_seq.txt), where the 1st line is positive example while 2nd line is the negative example. Our detailed results are saved in [Output](https://github.com/kiharalab/Attention_AD/tree/master/predict_result/input_seq.txt).
 
 
