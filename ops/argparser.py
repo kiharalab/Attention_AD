@@ -8,7 +8,7 @@ import argparse
 
 def argparser():
     parser = argparse.ArgumentParser()
-    parser.add_argument('-F',type=str, required=True,help='map path')#File path for our MAINMAST code
+    parser.add_argument('-F',type=str, required=True,help='input path records sequences information')#File path for our MAINMAST code
     parser.add_argument('--mode',type=int,required=True,help='0: Predict for a sequence\n')
     parser.add_argument('-M',type=str,default="",help="model saving path")
     parser.add_argument('--gpu',type=str,default='0',help='gpu id choose for training')
