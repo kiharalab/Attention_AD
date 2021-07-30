@@ -16,12 +16,12 @@ License: GPL v3 for academic use. (For commercial use, please contact us for dif
 Contact: Daisuke Kihara (dkihara@purdue.edu)
 
 ## Citation:
-Bradley K. Broyles, Andrew T. Gutierrez, Theodore P. Maris, Daniel A. Coil, Thomas M. Wagner, Xiao Wang, Daisuke Kihara, Caleb A Class & Alexandre M. Erkine. Activation of Gene Expression by Protein Domains Acting as Nucleosome Detergents. Molecular Cell(Submitted) (2021).
+Bradley K. Broyles, Andrew T. Gutierrez, Theodore P. Maris, Daniel A. Coil, Thomas M. Wagner, Xiao Wang, Daisuke Kihara, Caleb A Class & Alexandre M. Erkine. Activation of Gene Expression by Detergent-like Protein Domains. iScience(Submitted) (2021).
 ```
 @article{bradley2021,   
-  title={Activation of Gene Expression by Protein Domains Acting as Nucleosome Detergents},   
+  title={Activation of Gene Expression by Detergent-like Protein Domains},   
   author={Bradley K. Broyles, Andrew T. Gutierrez, Theodore P. Maris, Daniel A. Coil, Thomas M. Wagner, Xiao Wang, Daisuke Kihara, Caleb A Class, and Alexandre M. Erkine},    
-  journal={Molecular Cell(submitted)},    
+  journal={iScience(submitted)},    
   year={2021}    
 }   
 ```
